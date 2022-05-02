@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 export default function App(){
     return(
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/questions" element={<Questions/>}/>
